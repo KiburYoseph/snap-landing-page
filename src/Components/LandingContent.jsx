@@ -10,9 +10,9 @@ const LandingContent = () => {
     return (
         <main className='landingBody'>
             <section className='landingContent'>
-                <h1>Make<br/> Remote Work</h1>
+                <h1>Make<br/> remote work</h1>
                 <p>Get your team in sync, no matter your location.<br />Streamline processes, create team rituals, and<br /> watch productivity soar.</p>
-                <button>Learn More</button>
+                <button>Learn more</button>
                 <div className='iconCollection'>
                     <img src={databiz} />
                     <img src={audiophile} />
