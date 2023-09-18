@@ -1,0 +1,59 @@
+.navBar {
+    color: hsl(0, 0%, 41%);
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.6rem 2.6rem 1rem 2.6rem;
+}
+
+
+.navBar > ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 3.5rem;
+}
+
+.navBar > ul > li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.navBar > ul > li > img {
+    height: 0.5rem;
+}
+
+.sideBtns {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    gap: 2rem;
+    height: 100%;
+}
+
+.loginBtn {
+    border: none;
+    color: hsl(0, 0%, 41%);
+    background-color: transparent;
+    font-size: 1.2rem;
+
+}
+
+.registerBtn {
+    align-self: flex-start;
+    border: solid 2px hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 0.7rem 1.6rem;
+    background-color: transparent;
+}
