@@ -114,6 +114,7 @@
     background-color: transparent;
     border: none;
     margin-left: auto;
+    display: none;
 }
 
 .hamburgerButton > img {
@@ -149,7 +150,14 @@
     justify-content: center !important;
 }
 
+.rotatetrue > svg {
+    transform: rotate(180deg);
+}
+
 @media (max-width: 920px) {
+    .hamburgerButton {
+        display: block;
+    }
     .sideBtns {
         display: none;
     }
