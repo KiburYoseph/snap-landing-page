@@ -6,3 +6,7 @@ body {
     padding: 0px;
     font-family: 'Epilogue', sans-serif;
 }
+
+.all {
+    overflow-x: hidden;
+}

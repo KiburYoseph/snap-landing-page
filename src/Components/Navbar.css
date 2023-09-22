@@ -130,10 +130,16 @@
     position: absolute;
     top: 0%;
     right: 0;
+    transform: translateX(100%);
     height: 100vh;
     width: clamp(4rem, 55vw, 20rem);
     background-color: white;
     padding: 2rem 2rem !important;
+    transition: 300ms;
+}
+
+.hamburgerContainer.openMenu {
+    transform: translateX(0%);
 }
 
 .hamburgerContainer > li {

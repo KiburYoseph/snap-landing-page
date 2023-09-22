@@ -4,10 +4,10 @@ import LandingContent from './Components/LandingContent'
 
 const App = () => {
   return (
-    <>
+    <div className='all'>
       <Navbar />
       <LandingContent />
-    </>
+    </div>
   )
 }
 

@@ -26,7 +26,21 @@ const Navbar = () => {
     const companyRef = useRef(null)
 
     const handleMenu = () => {
-        setMenuState(!menuState)
+
+        if(menuState == false){
+            setMenuState(!menuState);
+            setTimeout(() => {
+
+                document.querySelector('#hamburgerContainer').classList.add("openMenu");
+            }, 100);
+        }
+        else if(menuState == true){
+            document.querySelector('#hamburgerContainer').classList.remove("openMenu");
+            setTimeout(() => {
+                setMenuState(!menuState);
+            }, 200);
+            
+        }
     }
     
     
@@ -97,7 +111,7 @@ const Navbar = () => {
             <button className='hamburgerButton' onClick={() => handleMenu()}><img src={menuIcon}/></button>
 
             {menuState ? 
-            <ul className='hamburgerContainer'>
+            <ul className='hamburgerContainer' id='hamburgerContainer'>
             <li className='closeIcon' onClick={() => handleMenu()}><img src={closeMenuIcon}/></li>
             <li onClick={() => setFeaturesMobile(!featuresMobile)} className={`rotate${featuresMobile}`}>Features <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>                        </li>  
                 
@@ -119,7 +133,8 @@ const Navbar = () => {
                 {companyMobile ? 
                 
                     <ul className='DDList'>
-                        <li>History</li>
+                        <li>History</li>Features
+
                         <li>Our Team</li>
                         <li>Blog</li>
                     </ul>
